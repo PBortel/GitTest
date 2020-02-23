@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class GitInTeam {
@@ -11,8 +12,9 @@ public class GitInTeam {
 
         System.out.print("Podaj tekst do sprawdzenia: ");
         String stringToCheck = scanner.nextLine();
+        String preparedString = StringUtilis.prepareString(stringToCheck);
 
-        if (PalindromChecker.checkPalindrome(stringToCheck)){
+        if (PalindromChecker.checkPalindrome(preparedString)){
             System.out.println("Jest.");
         }
         else{
@@ -21,3 +23,4 @@ public class GitInTeam {
 
     }
 }
+
