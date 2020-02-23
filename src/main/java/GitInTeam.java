@@ -11,7 +11,7 @@ public class GitInTeam {
 
         System.out.print("Podaj tekst do sprawdzenia: ");
         String stringToCheck = scanner.nextLine();
-        String preparedString = StringUtilis.prepareString(stringToCheck);
+        String preparedString = StringUtilis.prepareString(stringToCheck); // stringToCheck wrzucamy do metody prepareString w klasie StringUtils i przypisujemy zmiennej preparedString
 
         if (PalindromChecker.checkPalindrome(preparedString)){
             System.out.println("Jest.");
